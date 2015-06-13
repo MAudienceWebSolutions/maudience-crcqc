@@ -34,8 +34,12 @@
         }
         
         body {
-            background-color: @child-background-color;
             border-top: 5px solid @child-color-red;
+            min-height: 100vh;
+            background-color: @child-color-blue-lite;
+
+            .site-header,
+            #main { background-color: @child-background-color; }
             
             .site { box-shadow: none; }
 
@@ -45,7 +49,16 @@
                 img.header-image { box-shadow: none; }
             }
 
-            footer[role="contentinfo"] { background-color: @child-footer-color; }
+            footer[role="contentinfo"] {
+                color: white;
+                background-color: @child-color-blue-lite;
+
+                a {
+                    color: white;
+
+                    &:hover { color: white; }
+                }
+            }
         }
 
 /* SHELL STYLES

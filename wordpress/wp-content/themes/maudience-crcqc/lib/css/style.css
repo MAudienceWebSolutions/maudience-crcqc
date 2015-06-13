@@ -38,8 +38,13 @@ html {
   background-color: white;
 }
 body {
-  background-color: white;
   border-top: 5px solid #a50000;
+  min-height: 100vh;
+  background-color: #006e97;
+}
+body .site-header,
+body #main {
+  background-color: white;
 }
 body .site {
   box-shadow: none;
@@ -51,7 +56,14 @@ body .site-header img.header-image {
   box-shadow: none;
 }
 body footer[role="contentinfo"] {
-  background-color: white;
+  color: white;
+  background-color: #006e97;
+}
+body footer[role="contentinfo"] a {
+  color: white;
+}
+body footer[role="contentinfo"] a:hover {
+  color: white;
 }
 /* SHELL STYLES
 *****************************************************************/
