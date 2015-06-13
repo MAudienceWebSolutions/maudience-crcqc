@@ -66,11 +66,15 @@
 
     /*  ******************************** HEADER ********************************  */
 
-        .inner-header-wrap {
-            > a {
-                display: block;
-                max-width: 30%;
-                float: left;
+        .site-header {
+            min-height: 120px;
+
+            .inner-header-wrap {
+                > a {
+                    display: block;
+                    max-width: 30%;
+                    float: left;
+                }
             }
         }
 
@@ -94,7 +98,8 @@
 
     /*  ******************************** CONTENT ********************************  */
 
-
+        #main { background-color: @child-color-grey; }
+        
     /*  ******************************** SIDEBAR ********************************  */
     /*  ******************************** FOOTER ********************************  */
 
@@ -110,6 +115,8 @@
 *****************************************************************/
 
     .template-front-page {
+
+        #main { background-color: white; }
 
         #inner-main-wrap { max-width: none; }
 

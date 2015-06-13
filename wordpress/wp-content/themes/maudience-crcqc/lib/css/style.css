@@ -68,7 +68,10 @@ body footer[role="contentinfo"] a:hover {
 /* SHELL STYLES
 *****************************************************************/
 /*  ******************************** HEADER ********************************  */
-.inner-header-wrap > a {
+.site-header {
+  min-height: 120px;
+}
+.site-header .inner-header-wrap > a {
   display: block;
   max-width: 30%;
   float: left;
@@ -90,6 +93,9 @@ body footer[role="contentinfo"] a:hover {
   border: none;
 }
 /*  ******************************** CONTENT ********************************  */
+#main {
+  background-color: #f0f0f0;
+}
 /*  ******************************** SIDEBAR ********************************  */
 /*  ******************************** FOOTER ********************************  */
 footer[role="contentinfo"] a {
@@ -101,6 +107,9 @@ footer[role="contentinfo"] a {
 /*  ******************************** GRAVITYFORMS ********************************  */
 /* PAGE SPECIFIC STYLES
 *****************************************************************/
+.template-front-page #main {
+  background-color: white;
+}
 .template-front-page #inner-main-wrap {
   max-width: none;
 }
