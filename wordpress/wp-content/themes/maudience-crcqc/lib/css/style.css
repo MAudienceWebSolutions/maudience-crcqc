@@ -118,6 +118,11 @@ footer[role="contentinfo"] a {
 .template-front-page #inner-main-wrap {
   max-width: none;
 }
+.template-front-page #primary {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
 .template-front-page .top-section .column-centerfull {
   height: 515px;
   background: beige;
