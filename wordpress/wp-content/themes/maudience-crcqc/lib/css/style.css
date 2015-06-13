@@ -104,6 +104,13 @@ footer[role="contentinfo"] a {
 /*  ******************************** GRAVITYFORMS ********************************  */
 /* PAGE SPECIFIC STYLES
 *****************************************************************/
+.template-front-page .top-section .column-centerfull {
+  height: 515px;
+  background: beige;
+}
+.template-front-page .textwdiget .content-section.our-services {
+  background-color: #f0f0f0;
+}
 .template-front-page .inner-footer-wrap .widget-area {
   border: none;
 }
