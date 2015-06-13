@@ -140,6 +140,9 @@ footer[role="contentinfo"] a {
   height: 515px;
   background: beige;
 }
+.template-front-page .widget-area {
+  padding: 0;
+}
 .template-front-page .textwidget .content-section {
   padding: 20px 0;
   text-align: center;
