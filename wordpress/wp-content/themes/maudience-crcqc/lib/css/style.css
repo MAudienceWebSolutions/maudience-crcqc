@@ -90,9 +90,6 @@ body footer[role="contentinfo"] a:hover {
   border: none;
 }
 /*  ******************************** CONTENT ********************************  */
-#inner-main-wrap {
-  max-width: none;
-}
 /*  ******************************** SIDEBAR ********************************  */
 /*  ******************************** FOOTER ********************************  */
 footer[role="contentinfo"] a {
@@ -104,6 +101,9 @@ footer[role="contentinfo"] a {
 /*  ******************************** GRAVITYFORMS ********************************  */
 /* PAGE SPECIFIC STYLES
 *****************************************************************/
+.template-front-page #inner-main-wrap {
+  max-width: none;
+}
 .template-front-page .top-section .column-centerfull {
   height: 515px;
   background: beige;
