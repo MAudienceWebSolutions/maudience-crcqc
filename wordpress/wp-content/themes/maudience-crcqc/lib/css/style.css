@@ -96,6 +96,11 @@ body footer[role="contentinfo"] a:hover {
 #main {
   background-color: #f0f0f0;
 }
+#primary {
+  background-color: white;
+  margin: 20px 0;
+  padding: 20px;
+}
 /*  ******************************** SIDEBAR ********************************  */
 /*  ******************************** FOOTER ********************************  */
 footer[role="contentinfo"] a {
