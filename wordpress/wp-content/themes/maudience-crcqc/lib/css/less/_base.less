@@ -35,6 +35,7 @@
         
         body {
             background-color: @child-background-color;
+            border-top: 5px solid @child-color-red;
             
             .site { box-shadow: none; }
 
@@ -51,7 +52,26 @@
 *****************************************************************/
 
     /*  ******************************** HEADER ********************************  */
+
+        .inner-header-wrap {
+            > a {
+                display: block;
+                max-width: 30%;
+                float: left;
+            }
+        }
+
     /*  ******************************** MENUS AND NAVIGATION ********************************  */
+
+        .main-navigation {
+            max-width: 70%;
+            float: right;
+
+            .menu-primary-menu-container .nav-menu {
+                border: none;
+            }
+        }
+
     /*  ******************************** SIDEBAR ********************************  */
     /*  ******************************** FOOTER ********************************  */
 

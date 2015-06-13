@@ -39,6 +39,7 @@ html {
 }
 body {
   background-color: white;
+  border-top: 5px solid #a50000;
 }
 body .site {
   box-shadow: none;
@@ -55,7 +56,19 @@ body footer[role="contentinfo"] {
 /* SHELL STYLES
 *****************************************************************/
 /*  ******************************** HEADER ********************************  */
+.inner-header-wrap > a {
+  display: block;
+  max-width: 30%;
+  float: left;
+}
 /*  ******************************** MENUS AND NAVIGATION ********************************  */
+.main-navigation {
+  max-width: 70%;
+  float: right;
+}
+.main-navigation .menu-primary-menu-container .nav-menu {
+  border: none;
+}
 /*  ******************************** SIDEBAR ********************************  */
 /*  ******************************** FOOTER ********************************  */
 /* PLUGIN STYLES
