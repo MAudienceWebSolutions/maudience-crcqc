@@ -117,7 +117,7 @@ article .entry-header {
   padding-bottom: 10px;
 }
 /*  ******************************** SIDEBAR ********************************  */
-#secondary {
+#secondary .widget {
   padding: 20px;
 }
 /*  ******************************** FOOTER ********************************  */
