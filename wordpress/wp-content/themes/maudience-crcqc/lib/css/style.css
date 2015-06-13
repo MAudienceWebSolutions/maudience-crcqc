@@ -125,6 +125,14 @@ footer[role="contentinfo"] a {
 /*  ******************************** GRAVITYFORMS ********************************  */
 /* PAGE SPECIFIC STYLES
 *****************************************************************/
+.template-front-page h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.template-front-page h3 {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
 .template-front-page #main {
   background-color: white;
 }
@@ -167,7 +175,7 @@ footer[role="contentinfo"] a {
   margin: 0;
 }
 .template-front-page .textwidget .content-section {
-  padding: 40px 0;
+  padding: 75px 0;
   text-align: center;
   min-height: 495px;
 }
@@ -176,7 +184,7 @@ footer[role="contentinfo"] a {
 }
 .template-front-page .textwidget .content-section.our-services {
   background-color: #f0f0f0;
-  padding: 20px 0;
+  padding: 50px 0;
 }
 .template-front-page .inner-footer-wrap .widget-area {
   border: none;
