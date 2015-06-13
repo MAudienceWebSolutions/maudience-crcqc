@@ -73,7 +73,7 @@ body footer[role="contentinfo"] a:hover {
 *****************************************************************/
 /*  ******************************** HEADER ********************************  */
 .site-header {
-  overflow: hidden;
+  min-height: 115px;
   margin: 0;
 }
 .site-header .inner-header-wrap > a {
@@ -88,6 +88,7 @@ body footer[role="contentinfo"] a:hover {
 .main-navigation {
   max-width: 70%;
   float: right;
+  margin-top: 75px;
 }
 .main-navigation a,
 .main-navigation li a,
@@ -99,6 +100,11 @@ body footer[role="contentinfo"] a:hover {
 }
 .main-navigation .menu-primary-menu-container .nav-menu {
   border: none;
+}
+.main-navigation .menu-primary-menu-container .nav-menu li a {
+  color: #0a1633;
+  font-size: 1rem;
+  text-transform: capitalize;
 }
 /*  ******************************** CONTENT ********************************  */
 #primary {
