@@ -42,7 +42,9 @@ body {
   min-height: 100vh;
   background-color: #006e97;
 }
-body .site-header {
+body .site-header,
+body #primary,
+body #secondary {
   background-color: white;
 }
 body #main {
