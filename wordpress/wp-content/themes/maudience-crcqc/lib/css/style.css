@@ -89,6 +89,10 @@ body footer[role="contentinfo"] a:hover {
 .main-navigation .menu-primary-menu-container .nav-menu {
   border: none;
 }
+/*  ******************************** CONTENT ********************************  */
+#inner-main-wrap {
+  max-height: 100%;
+}
 /*  ******************************** SIDEBAR ********************************  */
 /*  ******************************** FOOTER ********************************  */
 footer[role="contentinfo"] a {
