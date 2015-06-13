@@ -66,11 +66,22 @@ body footer[role="contentinfo"] {
   max-width: 70%;
   float: right;
 }
+.main-navigation a,
+.main-navigation li a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current-menu-ancestor > a,
+.main-navigation .current_page_item > a,
+.main-navigation .current_page_ancestor > a {
+  color: black;
+}
 .main-navigation .menu-primary-menu-container .nav-menu {
   border: none;
 }
 /*  ******************************** SIDEBAR ********************************  */
 /*  ******************************** FOOTER ********************************  */
+footer[role="contentinfo"] a {
+  color: black;
+}
 /* PLUGIN STYLES
 *****************************************************************/
 /*  ******************************** WOOCOMMERCE ********************************  */
