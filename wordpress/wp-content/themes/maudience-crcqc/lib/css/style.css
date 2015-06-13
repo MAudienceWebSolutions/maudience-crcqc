@@ -44,7 +44,7 @@ body {
 }
 body .site-header,
 body #primary,
-body #secondary {
+body #secondary .widget {
   background-color: white;
 }
 body #main {
