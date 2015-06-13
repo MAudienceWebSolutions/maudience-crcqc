@@ -167,11 +167,16 @@ footer[role="contentinfo"] a {
   margin: 0;
 }
 .template-front-page .textwidget .content-section {
-  padding: 20px 0;
+  padding: 40px 0;
   text-align: center;
+  min-height: 495px;
+}
+.template-front-page .textwidget .content-section p {
+  margin: 20px 0;
 }
 .template-front-page .textwidget .content-section.our-services {
   background-color: #f0f0f0;
+  padding: 20px 0;
 }
 .template-front-page .inner-footer-wrap .widget-area {
   border: none;
