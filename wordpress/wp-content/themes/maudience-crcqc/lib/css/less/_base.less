@@ -48,6 +48,8 @@
 
             .site-header {
                 background-color: @child-header-color;
+                border-bottom: 2px solid @child-color-blue-elite;
+                padding-bottom: 0;
 
                 img.header-image { box-shadow: none; }
             }
@@ -101,10 +103,24 @@
             .menu-primary-menu-container .nav-menu {
                 border: none;
 
-                li a {
-                    color: @child-color-blue-dark;
-                    font-size: 1rem;
-                    text-transform: capitalize;
+                li {
+
+                    a {
+                        color: @child-color-blue-dark;
+                        font-size: 1rem;
+                        text-transform: capitalize;
+                        font-weight: bold;
+                    }
+
+                    &.menu-item-has-children:after {
+                        content: "";
+                        display: inline-block;
+                        width: 0; 
+                        height: 0; 
+                        border-top: 5px solid transparent;
+                        border-bottom: 5px solid transparent;
+                        border-left: 5px solid black;
+                    }
                 }
             }
         }
@@ -152,6 +168,8 @@
 
     .template-front-page {
 
+        .site-header { border-bottom: none; }
+
         h2 {
             font-size: 2rem;
             text-transform: uppercase;
@@ -198,8 +216,9 @@
             padding: 75px 0;
             text-align: center;
             min-height: 400px;
-
             p { margin: 20px 0; }
+
+            &.banner { border-top: 2px solid @child-color-blue-elite; }
 
             &.our-services {
                 background-color: @child-color-grey;

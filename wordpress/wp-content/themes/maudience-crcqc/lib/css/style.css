@@ -55,6 +55,8 @@ body .site {
 }
 body .site-header {
   background-color: white;
+  border-bottom: 2px solid #a9c3d1;
+  padding-bottom: 0;
 }
 body .site-header img.header-image {
   box-shadow: none;
@@ -105,6 +107,16 @@ body footer[role="contentinfo"] a:hover {
   color: #0a1633;
   font-size: 1rem;
   text-transform: capitalize;
+  font-weight: bold;
+}
+.main-navigation .menu-primary-menu-container .nav-menu li.menu-item-has-children:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid black;
 }
 /*  ******************************** CONTENT ********************************  */
 #primary {
@@ -137,6 +149,9 @@ footer#colophon .widget-area {
 /*  ******************************** GRAVITYFORMS ********************************  */
 /* PAGE SPECIFIC STYLES
 *****************************************************************/
+.template-front-page .site-header {
+  border-bottom: none;
+}
 .template-front-page h2 {
   font-size: 2rem;
   text-transform: uppercase;
@@ -194,6 +209,9 @@ footer#colophon .widget-area {
 }
 .template-front-page .textwidget .content-section p {
   margin: 20px 0;
+}
+.template-front-page .textwidget .content-section.banner {
+  border-top: 2px solid #a9c3d1;
 }
 .template-front-page .textwidget .content-section.our-services {
   background-color: #f0f0f0;
