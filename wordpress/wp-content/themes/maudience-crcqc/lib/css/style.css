@@ -172,6 +172,9 @@ footer#colophon .widget-area {
   padding: 0;
   border-top: none;
 }
+.template-front-page .site-content article {
+  padding-bottom: 0;
+}
 .template-front-page .top-section .column-centerfull {
   height: 515px;
   background-image: url('../images/collision-repair-center-quad-cities-banner-image-home.png');
@@ -208,7 +211,8 @@ footer#colophon .widget-area {
   min-height: 400px;
 }
 .template-front-page .textwidget .content-section p {
-  margin: 20px 0;
+  margin: 20px auto;
+  max-width: 87.5%;
 }
 .template-front-page .textwidget .content-section.banner {
   border-top: 2px solid #a9c3d1;
@@ -216,6 +220,9 @@ footer#colophon .widget-area {
 .template-front-page .textwidget .content-section.our-services {
   background-color: #f0f0f0;
   padding: 50px 0;
+}
+.template-front-page .textwidget .content-section.services-bottom {
+  min-height: 200px;
 }
 .template-front-page .inner-footer-wrap .widget-area {
   border: none;

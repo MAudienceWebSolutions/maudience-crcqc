@@ -191,6 +191,8 @@
             border-top: none;
         }
 
+        .site-content article { padding-bottom: 0; }
+
         .top-section .column-centerfull {
             height: 515px;
             background-image: url('../images/collision-repair-center-quad-cities-banner-image-home.png');
@@ -216,13 +218,21 @@
             padding: 75px 0;
             text-align: center;
             min-height: 400px;
-            p { margin: 20px 0; }
+
+            p {
+                margin: 20px auto;
+                max-width: 87.5%;
+            }
 
             &.banner { border-top: 2px solid @child-color-blue-elite; }
 
             &.our-services {
                 background-color: @child-color-grey;
                 padding: 50px 0;
+            }
+
+            &.services-bottom {
+                min-height: 200px;
             }
         }
 
