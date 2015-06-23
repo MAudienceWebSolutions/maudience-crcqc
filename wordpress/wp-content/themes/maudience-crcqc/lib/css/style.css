@@ -232,6 +232,113 @@ footer#colophon .footer-contact-wrap {
 *****************************************************************/
 /*  ******************************** WOOCOMMERCE ********************************  */
 /*  ******************************** GRAVITYFORMS ********************************  */
+.home-top-centerfull .column-right h2 {
+  background-color: #006e97;
+  padding: 10px 20px 5px;
+  text-transform: capitalize;
+  font-size: 1.75rem;
+  text-align: left;
+}
+#gform_wrapper_1 {
+  background-color: #006e97;
+  padding: 0 20px 20px;
+  margin: 0;
+}
+#gform_wrapper_1 .gform_description {
+  font-size: 0.85rem;
+  display: block;
+  font-weight: 100;
+}
+#gform_wrapper_1 .gform_fields .gfield_label {
+  display: none;
+}
+#gform_wrapper_1 .gform_fields .ginput_container input {
+  border-radius: 0;
+  height: 30px;
+  width: 100%;
+}
+#gform_wrapper_1 .gform_fields .gfield_contains_required .ginput_container {
+  border-right: 5px solid #a50000;
+}
+#gform_wrapper_1 .button {
+  display: block;
+  margin: auto;
+  color: white;
+  text-decoration: none;
+  height: 50px;
+  width: 250px;
+  background-color: rgba(10, 22, 51, 0.85);
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.15rem;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+}
+#gform_wrapper_1 .button.learn-more {
+  border-radius: 5px;
+  width: 100px;
+  padding: 10px;
+  background-color: #0a1633;
+}
+#gform_wrapper_1 .button.free-online-estimate {
+  height: 50px;
+  width: 250px;
+  background-color: rgba(10, 22, 51, 0.85);
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.15rem;
+}
+#gform_wrapper_1 .button.free-online-estimate:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid white;
+}
+#gform_wrapper_1 .button.free-online-estimate:before {
+  height: 50px;
+  width: 50px;
+  display: block;
+  background-color: black;
+  content: " ";
+  background-color: #0a1633;
+  float: left;
+}
+#gform_wrapper_1 .button.free-online-estimate:after {
+  margin-left: 10px;
+}
+#gform_wrapper_1 .button:hover {
+  background-color: rgba(10, 22, 51, 0.5);
+  color: white;
+}
+#gform_wrapper_1 .button:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid white;
+}
+#gform_wrapper_1 .button:before {
+  height: 50px;
+  width: 50px;
+  display: block;
+  background-color: black;
+  content: " ";
+  background-color: #0a1633;
+  float: left;
+}
+#gform_wrapper_1 .button:after {
+  margin-left: 10px;
+}
+#gform_wrapper_1 .button:hover {
+  background-image: none;
+  background-color: rgba(10, 22, 51, 0.5);
+}
 /* PAGE SPECIFIC STYLES
 *****************************************************************/
 .template-front-page .site-header {
@@ -301,8 +408,11 @@ footer#colophon .footer-contact-wrap {
   -webkit-align-items: space-between;
   align-items: space-between;
 }
-.template-front-page .top-section .column-centerfull .textwidget .column {
-  width: 50%;
+.template-front-page .top-section .column-centerfull .textwidget .column-left {
+  width: 75%;
+}
+.template-front-page .top-section .column-centerfull .textwidget .column-right {
+  width: 35%;
 }
 .template-front-page #main .widget-area {
   padding: 0;

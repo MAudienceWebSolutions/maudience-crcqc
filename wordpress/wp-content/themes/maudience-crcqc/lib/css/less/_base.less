@@ -193,7 +193,50 @@
     /*  ******************************** WOOCOMMERCE ********************************  */
     /*  ******************************** GRAVITYFORMS ********************************  */
 
+        .home-top-centerfull .column-right h2 {
+            background-color: @child-color-blue-lite;
+            padding: 10px 20px 5px;
+            text-transform: capitalize;
+            font-size: 1.75rem;
+            text-align: left;
+        }
 
+        #gform_wrapper_1 {
+            background-color: @child-color-blue-lite;
+            padding: 0 20px 20px;
+            margin: 0;
+
+            .gform_description {
+                font-size: 0.85rem;
+                display: block;
+                font-weight: 100;
+            }
+
+            .gform_fields {
+                .gfield_label { display: none; }
+
+                .ginput_container input {
+                    border-radius: 0;
+                    height: 30px;
+                    width: 100%;
+                }
+
+                .gfield_contains_required .ginput_container { border-right: 5px solid @child-color-red; }
+            }
+
+            .button {
+                .btn;
+                .free-online-estimate;
+                border: none;
+                padding: 0;
+                border-radius: 0;
+
+                &:hover {
+                    background-image: none;
+                    background-color: fade(@child-color-blue-dark, 50%);
+                }
+            }
+        }
 
 /* PAGE SPECIFIC STYLES
 *****************************************************************/
@@ -255,12 +298,12 @@
             color: white;
 
             .textwidget {
-                .inner-wrap {
-                    .maudience-flexbox(space-between);
-                }
-                .column {
-                    width: 50%;
-                }
+
+                .inner-wrap { .maudience-flexbox(space-between); }
+
+                .column-left { width: 75%; }
+
+                .column-right { width: 35%; }
             }
         }
 
