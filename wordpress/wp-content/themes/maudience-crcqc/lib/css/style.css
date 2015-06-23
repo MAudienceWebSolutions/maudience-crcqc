@@ -3,23 +3,63 @@
 /* MIXINS */
 /*
 
-    MIXINS
+	MIXINS
 
 */
 /* USE FLEXBOX FOR ALIGNMENT WHEN POSSIBLE - NO MORE FLOATS*/
-.btn {
-  border-radius: 5px;
-  background-color: #0a1633;
-  padding: 10px;
-  color: white;
-  width: 100px;
+/* RIGHT POINTING TRANGLE */
+/* BUTTON STYLES */
+.btn,
+.button {
   display: block;
   margin: auto;
+  color: white;
   text-decoration: none;
 }
-.btn:hover {
-  color: white;
+.btn.learn-more,
+.button.learn-more {
+  border-radius: 5px;
+  width: 100px;
+  padding: 10px;
+  background-color: #0a1633;
+}
+.btn.free-online-estimate,
+.button.free-online-estimate {
+  height: 50px;
+  width: 250px;
+  background-color: rgba(10, 22, 51, 0.85);
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.15rem;
+}
+.btn.free-online-estimate:after,
+.button.free-online-estimate:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid white;
+}
+.btn.free-online-estimate:before,
+.button.free-online-estimate:before {
+  height: 50px;
+  width: 50px;
+  display: block;
+  background-color: black;
+  content: " ";
+  background-color: #0a1633;
+  float: left;
+}
+.btn.free-online-estimate:after,
+.button.free-online-estimate:after {
+  margin-left: 10px;
+}
+.btn:hover,
+.button:hover {
   background-color: rgba(10, 22, 51, 0.5);
+  color: white;
 }
 /* BASE */
 /*  BASE 
@@ -156,6 +196,37 @@ footer#colophon a {
 footer#colophon .widget-area {
   padding: 0;
   margin: 0;
+}
+footer#colophon h2 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+footer#colophon h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+footer#colophon p {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.25rem;
+}
+footer#colophon span {
+  font-size: 0.95rem;
+  font-weight: 100;
+  line-height: 1rem;
+}
+footer#colophon li a {
+  text-decoration: none;
+}
+footer#colophon .estimate-btn-text {
+  text-align: right;
+  margin: 10px 0;
+  display: block;
+  font-style: italic;
+}
+footer#colophon .footer-contact-wrap {
+  margin: 0 auto 20px;
 }
 /* PLUGIN STYLES
 *****************************************************************/
