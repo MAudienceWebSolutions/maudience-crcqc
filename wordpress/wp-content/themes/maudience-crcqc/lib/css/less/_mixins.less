@@ -24,3 +24,19 @@
     -webkit-align-items: @flexeffect;
     align-items: @flexeffect;
 }
+
+.btn {
+    border-radius: 5px;
+    background-color: @child-color-blue-dark;
+    padding: 10px;
+    color: white;
+    width: 100px;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+
+    &:hover {
+        color: white;
+        background-color: fade(@child-color-blue-dark, 50%);
+    }
+}

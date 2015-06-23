@@ -7,6 +7,20 @@
 
 */
 /* USE FLEXBOX FOR ALIGNMENT WHEN POSSIBLE - NO MORE FLOATS*/
+.btn {
+  border-radius: 5px;
+  background-color: #0a1633;
+  padding: 10px;
+  color: white;
+  width: 100px;
+  display: block;
+  margin: auto;
+  text-decoration: none;
+}
+.btn:hover {
+  color: white;
+  background-color: rgba(10, 22, 51, 0.5);
+}
 /* BASE */
 /*  BASE 
 
@@ -175,6 +189,24 @@ footer#colophon .widget-area {
 .template-front-page .site-content article {
   padding-bottom: 0;
 }
+.template-front-page .our-services-list li {
+  list-style: none;
+}
+.template-front-page .our-services-list li h3 {
+  color: #006e97;
+}
+.template-front-page .our-services-list li h3:before {
+  content: "";
+  display: block;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 100px;
+  margin: 5px auto 15px;
+  background-image: url('https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97200&w=200&h=200');
+  border: 5px solid white;
+  box-shadow: 0 0 15px lightgrey;
+}
 .template-front-page .top-section .column-centerfull {
   height: 515px;
   background-image: url('../images/collision-repair-center-quad-cities-banner-image-home.png');
@@ -219,7 +251,10 @@ footer#colophon .widget-area {
 }
 .template-front-page .textwidget .content-section.our-services {
   background-color: #f0f0f0;
-  padding: 50px 0;
+  padding: 15px 0;
+}
+.template-front-page .textwidget .content-section.our-services h2 {
+  margin: 0 auto 20px;
 }
 .template-front-page .textwidget .content-section.services-bottom {
   min-height: 200px;
@@ -335,6 +370,23 @@ footer#colophon .widget-area {
   /*  ******************************** GRAVITYFORMS ********************************  */
   /* PAGE SPECIFIC STYLES
 *****************************************************************/
+  .template-front-page .our-services-list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -moz-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: space-between;
+    -moz-box-align: space-between;
+    -ms-flex-align: space-between;
+    -webkit-align-items: space-between;
+    align-items: space-between;
+  }
 }
 /* LARGE DESKTOP + */
 @media only screen and (min-width: 768px) {
