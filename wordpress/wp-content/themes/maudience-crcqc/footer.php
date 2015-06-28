@@ -14,11 +14,13 @@
 	<div id="pre-footer-full" class="column-centerfull section-column pre-footer-full">
 		<div class="inner-wrap">
 			<div class="column-left section-column">
-				<h3>Locals Love Us</h3>
-				<p>Add text</p>
+				<div class="inner-column-wrap">
+					<h3>Locals Love Us</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid, si reviviscant Platonis illi et deinceps qui eorum auditores fuerunt, et tecum ita loquantur? Proclivi currit oratio.</p>
+				</div>
 			</div>
 			<div class="column-right section-column">
-
+				<?php echo maudience_return_custom_posts('testimonials', '1', $title_or_content = 'both'); ?>
 			</div>
 		</div>
 	</div>
