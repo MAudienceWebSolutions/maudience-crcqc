@@ -144,6 +144,17 @@ body footer[role="contentinfo"] a:hover {
 .site-header .inner-header-wrap .header-image {
   margin-top: 0;
 }
+.site-header .header-right.widget-area {
+  width: 200px;
+  position: absolute;
+  right: 340px;
+  text-align: right;
+  top: 0;
+}
+.site-header .header-right.widget-area .textwidget p {
+  line-height: 1.5rem;
+  margin-top: 10px;
+}
 /*  ******************************** MENUS AND NAVIGATION ********************************  */
 .main-navigation {
   max-width: 70%;
@@ -453,6 +464,9 @@ footer#colophon .footer-contact-wrap {
 }
 .template-front-page .top-section .column-centerfull .textwidget .column-right {
   width: 35%;
+}
+.template-front-page .widget-area {
+  border-top: 0;
 }
 .template-front-page #main .widget-area {
   padding: 0;
