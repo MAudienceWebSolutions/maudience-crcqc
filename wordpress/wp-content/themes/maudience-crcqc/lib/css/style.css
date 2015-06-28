@@ -184,7 +184,7 @@ body footer[role="contentinfo"] a:hover {
   border: none;
 }
 .main-navigation .menu-primary-menu-container .nav-menu li a {
-  color: #0a1633;
+  color: #0000c0;
   font-size: 1rem;
   text-transform: capitalize;
   font-weight: bold;
@@ -447,6 +447,9 @@ footer#colophon .footer-contact-wrap {
 .template-front-page h3 {
   font-size: 1.5rem;
   margin-top: 5px;
+}
+.template-front-page .home-top-centerfull img {
+  max-width: 100%;
 }
 .template-front-page #main {
   background-color: white;
