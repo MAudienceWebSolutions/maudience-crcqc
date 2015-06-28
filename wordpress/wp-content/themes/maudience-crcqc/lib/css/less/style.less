@@ -11,16 +11,40 @@
 	@import "_base.less";
 
 /* MOBILE - STARTING BOX/POSITION STYLES */
-@media only screen and (min-width: 200px) {
+@media only screen and (min-width: 1px) {
 	@import "_0up.less";
 }
 
-/* TABLET + */
+// TWENTYTWELVE MOBILE BREAKPOINT STYLES
+@media only screen and (min-width: 600px) {
+    .main-navigation .menu-primary-menu-container .nav-menu {
+
+    	> .menu-item {
+	        &.menu-item-has-children { .right-pointing-triangle(black); }
+	        &:last-of-type { margin-right: 0; }
+	    }
+
+	    &.toggled-on > .menu-item,
+	    &.toggled-on > .menu-item:hover { //remove coloring if using mobile menu on desktop
+    		background-color: transparent;
+    		margin: 0 2.85rem 0 0;
+
+    		a { color: @child-color-blue; }
+    	}
+	}
+}
+
+/* TABLET PORTRAIT*/
 @media only screen and (min-width: 768px) {
 	@import "_768up.less";
 }
 
+/* TABLET LANDSCAPE*/
+@media only screen and (min-width: 960px) {
+	@import "_960up.less";
+}
+
 /* LARGE DESKTOP + */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
 	@import "_1200up.less";
 }

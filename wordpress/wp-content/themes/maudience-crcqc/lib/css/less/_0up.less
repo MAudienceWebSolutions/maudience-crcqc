@@ -1,23 +1,23 @@
-/*  0UP RESPONSIVE BASE STYLES
+/*  // 0UP RESPONSIVE BASE STYLES
 
-    This file contains all styles that do not change based on device
-    Use the responsive less files to add positioning styles
+  //   This file contains all styles that do not change based on device
+  //   Use the responsive less files to add positioning styles
 
-    Table of contents
+  //   Table of contents
 
-        General Styles
+  //       General Styles
 
-        Shell Styles
-            - Header
-            - Menus and Navigation
-            - Sidebar
-            - Footer
+  //       Shell Styles
+  //           - Header
+  //           - Menus and Navigation
+  //           - Sidebar
+  //           - Footer
 
-        Plug-in Specific Styles
-            - WooCommerce
-            - Gravity Forms
+  //       Plug-in Specific Styles
+  //           - WooCommerce
+  //           - Gravity Forms
 
-        Page Specific Styles
+  //       Page Specific Styles
 */
 
 /* ---------------------------------------------- */
@@ -47,7 +47,84 @@
 *****************************************************************/
 
     /*  ******************************** HEADER ********************************  */
+
+        .site-header {
+            //min-height: 115px;
+            //margin: 0;
+
+            .inner-header-wrap {
+                //position: relative;
+
+                > a {
+                    // display: block;
+                    // max-width: 30%;
+                    // float: left;
+                }
+
+                .header-image {
+                    margin: auto;
+                    display: block;
+                }
+            }
+
+            .header-right.widget-area {
+                // position: absolute;
+                // top: 0;
+                // right: 0;
+                // margin: 0;
+                // padding: 0;
+                // width: 200px;
+                text-align: center;
+
+                .textwidget {
+
+                    h3 {
+                        //font-weight: bold;
+                        //font-size: 1.25rem;
+                    }
+
+                    p {
+                        //margin-top: 5px;
+                        //font-size: 1rem;
+                        //line-height: 1.25rem;
+                    }
+                }
+            }
+        }
+
     /*  ******************************** MENUS AND NAVIGATION ********************************  */
+
+        .main-navigation {
+            .menu-primary-menu-container .nav-menu {
+                text-align: center;
+
+                &.toggled-on {//only style add these styles if button is toggled on to not show w/o mobile menu
+                    width: 100%;
+                    margin: 10px 0 -15px;
+
+                    .menu-item {
+                        background-color: @child-color-blue;
+                        margin: 0;
+                        padding: 20px 0;
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                        }
+
+                        &:hover {
+                            background-color: @child-color-blue-lite;
+
+                            a { color: white; }
+                        }
+
+                        .sub-menu { display: none; }
+                    }
+                }
+            }
+        }
+
+
     /*  ******************************** SIDEBAR ********************************  */
     /*  ******************************** FOOTER ********************************  */
 

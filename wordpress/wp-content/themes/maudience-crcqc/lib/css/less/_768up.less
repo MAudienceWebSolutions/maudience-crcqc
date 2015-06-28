@@ -42,7 +42,58 @@
 *****************************************************************/
 
     /*  ******************************** HEADER ********************************  */
+
+        .site-header {
+            min-height: 115px;
+            margin: 0;
+
+            .inner-header-wrap {
+                position: relative;
+
+                > a {
+                    display: block;
+                    max-width: 30%;
+                    float: left;
+                }
+
+                .header-image { margin-top: 0; }
+            }
+
+            .header-right.widget-area {
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 0;
+                padding: 0;
+                width: 200px;
+                text-align: right;
+
+                .textwidget {
+
+                    h3 {
+                        font-weight: bold;
+                        font-size: 1.25rem;
+                    }
+
+                    p {
+                        margin-top: 5px;
+                        font-size: 1rem;
+                        line-height: 1.25rem;
+                    }
+                }
+            }
+        }
+
     /*  ******************************** MENUS AND NAVIGATION ********************************  */
+
+        .main-navigation {
+            max-width: 70%;
+            float: right;
+            margin-top: 75px;
+
+            li { margin: 0 1.8rem 0 0; }
+        }
+        
     /*  ******************************** SIDEBAR ********************************  */
     /*  ******************************** FOOTER ********************************  */
 

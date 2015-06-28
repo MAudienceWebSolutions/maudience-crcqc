@@ -132,31 +132,6 @@ body footer[role="contentinfo"] a:hover {
 }
 /* SHELL STYLES
 *****************************************************************/
-/*  ******************************** HEADER ********************************  */
-.site-header {
-  min-height: 115px;
-  margin: 0;
-}
-.site-header .inner-header-wrap {
-  position: relative;
-}
-.site-header .inner-header-wrap > a {
-  display: block;
-  max-width: 30%;
-  float: left;
-}
-.site-header .inner-header-wrap .header-image {
-  margin-top: 0;
-}
-.site-header .header-right.widget-area {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  text-align: right;
-}
 .site-header .header-right.widget-area .textwidget h3 {
   font-weight: bold;
   font-size: 1.25rem;
@@ -167,11 +142,6 @@ body footer[role="contentinfo"] a:hover {
   line-height: 1.25rem;
 }
 /*  ******************************** MENUS AND NAVIGATION ********************************  */
-.main-navigation {
-  max-width: 70%;
-  float: right;
-  margin-top: 75px;
-}
 .main-navigation a,
 .main-navigation li a,
 .main-navigation .current-menu-item > a,
@@ -188,18 +158,6 @@ body footer[role="contentinfo"] a:hover {
   font-size: 1rem;
   text-transform: capitalize;
   font-weight: bold;
-}
-.main-navigation .menu-primary-menu-container .nav-menu li.menu-item-has-children:after {
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid black;
-}
-.main-navigation .menu-primary-menu-container .nav-menu li:last-of-type {
-  margin-right: 0;
 }
 footer#colophon .menu-social-media-navigation-container .menu:before {
   display: inline-block;
@@ -550,27 +508,27 @@ footer#colophon .footer-contact-wrap {
   border: none;
 }
 /* MOBILE - STARTING BOX/POSITION STYLES */
-@media only screen and (min-width: 200px) {
-  /*  0UP RESPONSIVE BASE STYLES
+@media only screen and (min-width: 1px) {
+  /*  // 0UP RESPONSIVE BASE STYLES
 
-    This file contains all styles that do not change based on device
-    Use the responsive less files to add positioning styles
+  //   This file contains all styles that do not change based on device
+  //   Use the responsive less files to add positioning styles
 
-    Table of contents
+  //   Table of contents
 
-        General Styles
+  //       General Styles
 
-        Shell Styles
-            - Header
-            - Menus and Navigation
-            - Sidebar
-            - Footer
+  //       Shell Styles
+  //           - Header
+  //           - Menus and Navigation
+  //           - Sidebar
+  //           - Footer
 
-        Plug-in Specific Styles
-            - WooCommerce
-            - Gravity Forms
+  //       Plug-in Specific Styles
+  //           - WooCommerce
+  //           - Gravity Forms
 
-        Page Specific Styles
+  //       Page Specific Styles
 */
   /* ---------------------------------------------- */
   /* TEMPORARY AND IMPORTANT STYLES (to be removed) *\
@@ -590,7 +548,39 @@ footer#colophon .footer-contact-wrap {
   /* SHELL STYLES
 *****************************************************************/
   /*  ******************************** HEADER ********************************  */
+  .site-header .inner-header-wrap .header-image {
+    margin: auto;
+    display: block;
+  }
+  .site-header .header-right.widget-area {
+    text-align: center;
+  }
   /*  ******************************** MENUS AND NAVIGATION ********************************  */
+  .main-navigation .menu-primary-menu-container .nav-menu {
+    text-align: center;
+  }
+  .main-navigation .menu-primary-menu-container .nav-menu.toggled-on {
+    width: 100%;
+    margin: 10px 0 -15px;
+  }
+  .main-navigation .menu-primary-menu-container .nav-menu.toggled-on .menu-item {
+    background-color: #0000c0;
+    margin: 0;
+    padding: 20px 0;
+  }
+  .main-navigation .menu-primary-menu-container .nav-menu.toggled-on .menu-item a {
+    color: white;
+    text-decoration: none;
+  }
+  .main-navigation .menu-primary-menu-container .nav-menu.toggled-on .menu-item:hover {
+    background-color: #006e97;
+  }
+  .main-navigation .menu-primary-menu-container .nav-menu.toggled-on .menu-item:hover a {
+    color: white;
+  }
+  .main-navigation .menu-primary-menu-container .nav-menu.toggled-on .menu-item .sub-menu {
+    display: none;
+  }
   /*  ******************************** SIDEBAR ********************************  */
   /*  ******************************** FOOTER ********************************  */
   /* PLUGIN STYLES
@@ -600,7 +590,30 @@ footer#colophon .footer-contact-wrap {
   /* PAGE SPECIFIC STYLES
 *****************************************************************/
 }
-/* TABLET + */
+@media only screen and (min-width: 600px) {
+  .main-navigation .menu-primary-menu-container .nav-menu > .menu-item.menu-item-has-children:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid black;
+  }
+  .main-navigation .menu-primary-menu-container .nav-menu > .menu-item:last-of-type {
+    margin-right: 0;
+  }
+  .main-navigation .menu-primary-menu-container .nav-menu.toggled-on > .menu-item,
+  .main-navigation .menu-primary-menu-container .nav-menu.toggled-on > .menu-item:hover {
+    background-color: transparent;
+    margin: 0 2.85rem 0 0;
+  }
+  .main-navigation .menu-primary-menu-container .nav-menu.toggled-on > .menu-item a,
+  .main-navigation .menu-primary-menu-container .nav-menu.toggled-on > .menu-item:hover a {
+    color: #0000c0;
+  }
+}
+/* TABLET PORTRAIT*/
 @media only screen and (min-width: 768px) {
   /*  768UP TABLET RESPONSIVE STYLES 
 
@@ -635,7 +648,48 @@ footer#colophon .footer-contact-wrap {
   /* SHELL STYLES
 *****************************************************************/
   /*  ******************************** HEADER ********************************  */
+  .site-header {
+    min-height: 115px;
+    margin: 0;
+  }
+  .site-header .inner-header-wrap {
+    position: relative;
+  }
+  .site-header .inner-header-wrap > a {
+    display: block;
+    max-width: 30%;
+    float: left;
+  }
+  .site-header .inner-header-wrap .header-image {
+    margin-top: 0;
+  }
+  .site-header .header-right.widget-area {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    text-align: right;
+  }
+  .site-header .header-right.widget-area .textwidget h3 {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  .site-header .header-right.widget-area .textwidget p {
+    margin-top: 5px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
   /*  ******************************** MENUS AND NAVIGATION ********************************  */
+  .main-navigation {
+    max-width: 70%;
+    float: right;
+    margin-top: 75px;
+  }
+  .main-navigation li {
+    margin: 0 1.8rem 0 0;
+  }
   /*  ******************************** SIDEBAR ********************************  */
   /*  ******************************** FOOTER ********************************  */
   footer .inner-wrap {
@@ -679,8 +733,52 @@ footer#colophon .footer-contact-wrap {
     align-items: space-between;
   }
 }
+/* TABLET LANDSCAPE*/
+@media only screen and (min-width: 960px) {
+  /*  960UP DESKTOP STYLES 
+
+    This file contains all styles that do not change based on device
+    Use the responsive less files to add positioning styles
+
+    Table of contents
+
+        General Styles
+
+        Shell Styles
+            - Header
+            - Menus and Navigation
+            - Sidebar
+            - Footer
+
+        Plug-in Specific Styles
+            - WooCommerce
+            - Gravity Forms
+
+        Page Specific Styles
+*/
+  /* ---------------------------------------------- */
+  /* TEMPORARY AND IMPORTANT STYLES (to be removed) *\
+\* ---------------------------------------------- */
+  /* GENERAL STYLES
+*****************************************************************/
+  /* SHELL STYLES
+*****************************************************************/
+  /*  ******************************** HEADER ********************************  */
+  /*  ******************************** MENUS AND NAVIGATION ********************************  */
+  .main-navigation li {
+    margin: 0 2.85rem 0 0;
+  }
+  /*  ******************************** SIDEBAR ********************************  */
+  /*  ******************************** FOOTER ********************************  */
+  /* PLUGIN STYLES
+*****************************************************************/
+  /*  ******************************** WOOCOMMERCE ********************************  */
+  /*  ******************************** GRAVITYFORMS ********************************  */
+  /* PAGE SPECIFIC STYLES
+*****************************************************************/
+}
 /* LARGE DESKTOP + */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   /*  1200UP DESKTOP STYLES 
 
     This file contains all styles that do not change based on device
