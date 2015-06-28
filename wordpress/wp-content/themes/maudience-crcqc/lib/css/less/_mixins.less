@@ -55,17 +55,18 @@
 		}
 
 		&.free-online-estimate {
-			height: 50px;
+			@height: 40px;
+			height: @height;
 			width: 250px;
 			background-color: fade(@button-color, 85%);
-			line-height: 50px;
+			line-height: @height;
 			text-align: center;
 			font-size: 1.15rem;
 			.right-pointing-triangle(white);
 
 			&:before {
-				height: 50px;
-				width: 50px;
+				height: @height;
+				width: @height;// make it square
 				display: block;
 				background-color: transparent;
 				content: " ";
@@ -74,12 +75,10 @@
 				background-image: url('../images/clip-board-icon.png');
 				background-repeat: no-repeat;
 				background-size: auto;
-				background-position: 50% 50%
+				background-position: 50% 50%;
 			}
 
-			&:after {
-				margin-left: 10px;
-			}
+			&:after { margin-left: 10px; }
 		}
 
 		&:hover {
