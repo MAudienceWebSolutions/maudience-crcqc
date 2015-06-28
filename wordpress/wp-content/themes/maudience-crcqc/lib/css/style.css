@@ -510,6 +510,10 @@ footer#colophon .footer-contact-wrap {
 .template-front-page .top-section .column-centerfull .textwidget .column-right {
   width: 35%;
 }
+.template-front-page .top-section .column-centerfull .textwidget #gform_submit_button_1 {
+  margin-left: 20%;
+  max-width: 80%;
+}
 .template-front-page .widget-area {
   border-top: 0;
 }
