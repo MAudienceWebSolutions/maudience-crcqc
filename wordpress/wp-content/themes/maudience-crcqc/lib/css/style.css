@@ -443,33 +443,12 @@ footer#colophon .footer-contact-wrap {
   box-shadow: 0 0 15px lightgrey;
 }
 .template-front-page .top-section .column-centerfull {
-  height: 515px;
   background-image: url('../images/collision-repair-center-quad-cities-banner-image-home.png');
   background-size: cover;
   color: white;
 }
-.template-front-page .top-section .column-centerfull .textwidget .inner-wrap {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: space-between;
-  -moz-box-pack: space-between;
-  -ms-flex-pack: space-between;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-box-align: space-between;
-  -moz-box-align: space-between;
-  -ms-flex-align: space-between;
-  -webkit-align-items: space-between;
-  align-items: space-between;
-}
-.template-front-page .top-section .column-centerfull .textwidget .column-left {
-  width: 75%;
-}
-.template-front-page .top-section .column-centerfull .textwidget .column-right {
-  width: 35%;
+.template-front-page .top-section .column-centerfull .textwidget .column {
+  margin: 10px 0;
 }
 .template-front-page .top-section .column-centerfull .textwidget #gform_submit_button_1 {
   margin-left: 20%;
@@ -493,6 +472,7 @@ footer#colophon .footer-contact-wrap {
 }
 .template-front-page .textwidget .content-section.banner {
   border-top: 2px solid #a9c3d1;
+  padding: 15px 0;
 }
 .template-front-page .textwidget .content-section.our-services {
   background-color: #f0f0f0;
@@ -589,6 +569,11 @@ footer#colophon .footer-contact-wrap {
   /*  ******************************** GRAVITYFORMS ********************************  */
   /* PAGE SPECIFIC STYLES
 *****************************************************************/
+  .template-front-page .top-section .column-centerfull .textwidget .column-left,
+  .template-front-page .top-section .column-centerfull .textwidget .column-right {
+    width: 80%;
+    padding: 0 10%;
+  }
 }
 @media only screen and (min-width: 600px) {
   .main-navigation .menu-primary-menu-container .nav-menu > .menu-item.menu-item-has-children:after {
@@ -715,6 +700,36 @@ footer#colophon .footer-contact-wrap {
   /*  ******************************** GRAVITYFORMS ********************************  */
   /* PAGE SPECIFIC STYLES
 *****************************************************************/
+  .template-front-page .top-section .column-centerfull {
+    height: 515px;
+  }
+  .template-front-page .top-section .column-centerfull .textwidget .inner-wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -moz-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: space-between;
+    -moz-box-align: space-between;
+    -ms-flex-align: space-between;
+    -webkit-align-items: space-between;
+    align-items: space-between;
+  }
+  .template-front-page .top-section .column-centerfull .textwidget .column-left,
+  .template-front-page .top-section .column-centerfull .textwidget .column-right {
+    padding: 0;
+  }
+  .template-front-page .top-section .column-centerfull .textwidget .column-left {
+    width: 75%;
+  }
+  .template-front-page .top-section .column-centerfull .textwidget .column-right {
+    width: 35%;
+  }
   .template-front-page .our-services-list {
     display: -webkit-box;
     display: -moz-box;
@@ -731,6 +746,9 @@ footer#colophon .footer-contact-wrap {
     -ms-flex-align: space-between;
     -webkit-align-items: space-between;
     align-items: space-between;
+  }
+  .template-front-page .textwidget .content-section.banner {
+    padding: 33.5px 0;
   }
 }
 /* TABLET LANDSCAPE*/

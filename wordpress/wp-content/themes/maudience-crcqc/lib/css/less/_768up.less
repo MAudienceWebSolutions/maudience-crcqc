@@ -113,10 +113,14 @@
     .template-front-page {
 
         .top-section .column-centerfull {
+            height: 515px;
 
             .textwidget {
 
                 .inner-wrap { .maudience-flexbox(space-between); }
+
+                .column-left,
+                .column-right { padding: 0; }
 
                 .column-left { width: 75%; }
 
@@ -126,6 +130,13 @@
 
         .our-services-list {
             .maudience-flexbox(space-between);
+        }
+
+         .textwidget .content-section {
+
+            &.banner {
+                padding: 33.5px 0;
+            }
         }
 
     }
