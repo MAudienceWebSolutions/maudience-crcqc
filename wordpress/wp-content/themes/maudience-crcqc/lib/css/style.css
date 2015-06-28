@@ -136,6 +136,9 @@ body footer[role="contentinfo"] a:hover {
   min-height: 115px;
   margin: 0;
 }
+.site-header .inner-header-wrap {
+  position: relative;
+}
 .site-header .inner-header-wrap > a {
   display: block;
   max-width: 30%;
@@ -145,15 +148,22 @@ body footer[role="contentinfo"] a:hover {
   margin-top: 0;
 }
 .site-header .header-right.widget-area {
-  width: 200px;
   position: absolute;
-  right: 340px;
-  text-align: right;
   top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  text-align: right;
+}
+.site-header .header-right.widget-area .textwidget h3 {
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 .site-header .header-right.widget-area .textwidget p {
-  line-height: 1.5rem;
-  margin-top: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 /*  ******************************** MENUS AND NAVIGATION ********************************  */
 .main-navigation {
