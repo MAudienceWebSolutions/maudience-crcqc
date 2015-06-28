@@ -202,10 +202,47 @@
     /*  ******************************** PRE FOOTER ********************************  */
 
         .pre-footer-full {
-            min-height: 200px;
             background-color: #002f6f;
             color: white;
-            padding: 50px 0;
+
+            .column-left {
+                h3 {
+                    font-size: 1.5rem;
+                    margin-bottom: 20px;
+                    font-weight: bold;
+                }
+
+                p {
+                    font-size: 0.75rem;
+                }
+            }
+
+            .post-content-wrap {
+                background: lightgrey;
+                color: black;
+
+                .custom-post-content {
+                    &:before,
+                    &:after {
+                        content: '"';
+                        font-size: 2.5rem;
+                        line-height: 1rem;
+                        font-family: cursive;
+                    }
+
+                    &:before {
+                        float: left;
+                    }
+
+                    &:after {
+                        float: right;
+                        margin-top: -20px;
+                        margin-right: 10px;
+                    }
+                }
+
+                p { font-size: 1rem; }
+            }
         }
 
     /*  ******************************** FOOTER ********************************  */

@@ -230,10 +230,38 @@ footer#colophon .menu-social-media-navigation-container .menu .menu-item:nth-of-
 }
 /*  ******************************** PRE FOOTER ********************************  */
 .pre-footer-full {
-  min-height: 200px;
   background-color: #002f6f;
   color: white;
-  padding: 50px 0;
+}
+.pre-footer-full .column-left h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.pre-footer-full .column-left p {
+  font-size: 0.75rem;
+}
+.pre-footer-full .post-content-wrap {
+  background: lightgrey;
+  color: black;
+}
+.pre-footer-full .post-content-wrap .custom-post-content:before,
+.pre-footer-full .post-content-wrap .custom-post-content:after {
+  content: '"';
+  font-size: 2.5rem;
+  line-height: 1rem;
+  font-family: cursive;
+}
+.pre-footer-full .post-content-wrap .custom-post-content:before {
+  float: left;
+}
+.pre-footer-full .post-content-wrap .custom-post-content:after {
+  float: right;
+  margin-top: -20px;
+  margin-right: 10px;
+}
+.pre-footer-full .post-content-wrap p {
+  font-size: 1rem;
 }
 /*  ******************************** FOOTER ********************************  */
 footer#colophon {
@@ -568,6 +596,41 @@ footer#colophon .footer-contact-wrap {
     display: none;
   }
   /*  ******************************** SIDEBAR ********************************  */
+  /*  ******************************** PRE FOOTER  ********************************  */
+  .pre-footer-full {
+    min-height: 200px;
+    padding: 20px 0 0;
+  }
+  .pre-footer-full .section-column {
+    max-width: 80%;
+    padding: 20px 10%;
+  }
+  .pre-footer-full .column-left .inner-column-wrap {
+    max-width: 50%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .pre-footer-full .column-left:before {
+    display: inline-block;
+    width: 35%;
+    background-image: url('../images/testimonials-trophy.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 180px;
+    content: "";
+    margin-right: 10%;
+  }
+  .pre-footer-full .post-content-wrap {
+    padding: 20px;
+  }
+  .pre-footer-full .post-content-wrap .custom-post-title {
+    margin-left: 20px;
+  }
+  .pre-footer-full .post-content-wrap p {
+    margin: 10px 20px;
+    line-height: 1.45rem;
+  }
   /*  ******************************** FOOTER ********************************  */
   footer#colophon {
     text-align: center;
@@ -688,6 +751,18 @@ footer#colophon .footer-contact-wrap {
     margin: 0 1.8rem 0 0;
   }
   /*  ******************************** SIDEBAR ********************************  */
+  /*  ******************************** PRE FOOTER ********************************  */
+  .pre-footer-full {
+    white-space: nowrap;
+  }
+  .pre-footer-full .section-column {
+    vertical-align: top;
+    width: 45%;
+    display: inline-block;
+    white-space: normal;
+    max-width: 100%;
+    padding: 0 2.5%;
+  }
   /*  ******************************** FOOTER ********************************  */
   footer#colophon {
     text-align: left;
