@@ -228,6 +228,13 @@ footer#colophon .menu-social-media-navigation-container .menu .menu-item:nth-of-
 #secondary.widget-area .widget p {
   padding: 20px;
 }
+/*  ******************************** PRE FOOTER ********************************  */
+.pre-footer-full {
+  min-height: 200px;
+  background-color: #002f6f;
+  color: white;
+  padding: 50px 0;
+}
 /*  ******************************** FOOTER ********************************  */
 footer#colophon {
   padding: 20px 0;

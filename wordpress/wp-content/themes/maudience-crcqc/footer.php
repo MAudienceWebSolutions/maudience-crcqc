@@ -11,6 +11,17 @@
 ?>
 		</div><!-- #inner-main-wrap .inner-wrap -->
 	</div><!-- #main .wrapper -->
+	<div id="pre-footer-full" class="column-centerfull section-column pre-footer-full">
+		<div class="inner-wrap">
+			<div class="column-left section-column">
+				<h3>Locals Love Us</h3>
+				<p>Add text</p>
+			</div>
+			<div class="column-right section-column">
+
+			</div>
+		</div>
+	</div>
 	<footer id="colophon" role="contentinfo">
 		<div id="inner-footer-wrap" class="inner-footer-wrap inner-wrap">
 			<?php if ( is_active_sidebar( 'footer-widget-left' ) ) : ?>
