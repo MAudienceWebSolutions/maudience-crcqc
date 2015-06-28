@@ -194,7 +194,28 @@
 
     /*  ******************************** SIDEBAR ********************************  */
 
-        #secondary .widget { padding: 20px; }
+        #secondary .widget {
+            padding: 0;
+
+            h3 {
+                margin: 0;
+                color: white;
+                background-color: @child-color-blue-lite;
+                padding: 5px 20px;
+                font-size: 1.25rem;
+                text-transform: capitalize;
+            }
+
+            &.gform_widget h3 {
+                height: 25px;
+            }
+
+            .gform_description { color: white; }
+
+            p {
+                padding: 20px;
+            }
+        }
 
     /*  ******************************** FOOTER ********************************  */
 
@@ -276,7 +297,9 @@
                 .ginput_container input {
                     border-radius: 0;
                     height: 30px;
-                    width: 100%;
+                    width: 95%;
+                    padding-left: 5%;
+                    font-style: italic;
                 }
 
                 .gfield_contains_required .ginput_container { border-right: 5px solid @child-color-red; }

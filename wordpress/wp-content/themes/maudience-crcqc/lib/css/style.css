@@ -27,6 +27,7 @@
 .button.free-online-estimate {
   height: 40px;
   width: 250px;
+  max-width: 100%;
   background-color: rgba(10, 22, 51, 0.85);
   line-height: 40px;
   text-align: center;
@@ -239,6 +240,23 @@ article .entry-header {
 }
 /*  ******************************** SIDEBAR ********************************  */
 #secondary .widget {
+  padding: 0;
+}
+#secondary .widget h3 {
+  margin: 0;
+  color: white;
+  background-color: #006e97;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+#secondary .widget.gform_widget h3 {
+  height: 25px;
+}
+#secondary .widget .gform_description {
+  color: white;
+}
+#secondary .widget p {
   padding: 20px;
 }
 /*  ******************************** FOOTER ********************************  */
@@ -310,7 +328,9 @@ footer#colophon .footer-contact-wrap {
 #gform_wrapper_1 .gform_fields .ginput_container input {
   border-radius: 0;
   height: 30px;
-  width: 100%;
+  width: 95%;
+  padding-left: 5%;
+  font-style: italic;
 }
 #gform_wrapper_1 .gform_fields .gfield_contains_required .ginput_container {
   border-right: 5px solid #a50000;
@@ -322,6 +342,7 @@ footer#colophon .footer-contact-wrap {
   text-decoration: none;
   height: 40px;
   width: 250px;
+  max-width: 100%;
   background-color: rgba(10, 22, 51, 0.85);
   line-height: 40px;
   text-align: center;
@@ -339,6 +360,7 @@ footer#colophon .footer-contact-wrap {
 #gform_wrapper_1 .button.free-online-estimate {
   height: 40px;
   width: 250px;
+  max-width: 100%;
   background-color: rgba(10, 22, 51, 0.85);
   line-height: 40px;
   text-align: center;
@@ -590,7 +612,7 @@ footer#colophon .footer-contact-wrap {
 *****************************************************************/
   #secondary {
     width: 29%;
-    border-top: 5px solid white;
+    margin-top: 24px;
   }
   /* SHELL STYLES
 *****************************************************************/
