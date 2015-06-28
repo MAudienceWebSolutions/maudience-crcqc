@@ -370,7 +370,6 @@ require_once('lib/maudience-contactinfo.php');
         if( $my_query->have_posts() ) :
           while ($my_query->have_posts()) : $my_query->the_post(); ?>
             <li class="custom-post-type-list-item <?php echo get_post_type() ?>">
-                <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
                     <?php if ( has_post_thumbnail() ) : ?>
                         <div class="entry-page-image">
                             <?php the_post_thumbnail(); ?>
@@ -380,18 +379,18 @@ require_once('lib/maudience-contactinfo.php');
 
                         <?php if ( $title_or_content === 'title' ) : ?>
                             <div class="custom-post-title">
-                                <?php the_title(); ?>
+                                <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                             </div><!-- .custom-post-title -->
                         <?php elseif ( $title_or_content === 'content' ) : ?>
                             <div class="custom-post-content">
                                 <?php the_content(); ?>
                             </div><!-- .custom-post-title -->
                         <?php elseif ( $title_or_content === 'both' ) : ?>
-                            <div class="custom-post-title">
-                                <?php the_title(); ?>
-                            </div><!-- .custom-post-title -->
                             <div class="custom-post-content">
                                 <?php the_content(); ?>
+                            </div><!-- .custom-post-title -->
+                            <div class="custom-post-title">
+                                <?php the_title(); ?>
                             </div><!-- .custom-post-title -->
                         <?php endif; ?>
 
@@ -412,9 +411,7 @@ require_once('lib/maudience-contactinfo.php');
                                 <span><?php echo esc_html(get_post_meta( get_the_ID(), '_ma_meta_value_key3', true )); ?></span>                            
                             </div><!-- .custom-post-upselltext -->
                         <?php endif; ?>
-                    </div>
-                </a>
-                <div class="reserve-now-wrap"><a class="els-button" href='/reservations'>Reserve Now ></a></div><!-- .custom-post-upselltext -->              
+                    </div>      
                <!--  <div class="cpt-button-wrap">
                     <a class="ctl-button ctl-viewdetails-button" href="<?php the_permalink() ?>" />View Details <span>>></span></a>
                     <a class="ctl-button ctl-inquire-button" href="/contact/" />Inquire</a>
