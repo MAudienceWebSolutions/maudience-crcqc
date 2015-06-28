@@ -234,9 +234,19 @@ footer#colophon .menu-social-media-navigation-container .menu .menu-item:nth-of-
   padding: 20px;
   border-top: 5px solid #a50000;
 }
-article .entry-header {
-  border-bottom: 1px solid black;
-  padding-bottom: 10px;
+.site-content article {
+  border-bottom: 0;
+}
+.site-content article .entry-header {
+  border-bottom: 2.5px solid lightgrey;
+  padding-bottom: 5px;
+}
+.site-content article .entry-header .entry-title {
+  font-size: 1.85rem;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 1.75px;
+  font-weight: 600;
 }
 /*  ******************************** SIDEBAR ********************************  */
 #secondary .widget {
