@@ -115,7 +115,7 @@ body .site {
 body .site-header {
   background-color: white;
   border-bottom: 2px solid #a9c3d1;
-  padding-bottom: 0;
+  padding-bottom: 15px;
 }
 body .site-header img.header-image {
   box-shadow: none;
