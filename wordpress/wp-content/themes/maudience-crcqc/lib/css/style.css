@@ -242,7 +242,7 @@ footer#colophon .widget-area {
 footer#colophon h2 {
   text-transform: capitalize;
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 footer#colophon h3 {
   font-size: 1rem;
@@ -262,7 +262,6 @@ footer#colophon li a {
   text-decoration: none;
 }
 footer#colophon .estimate-btn-text {
-  text-align: right;
   margin: 10px 0;
   display: block;
   font-style: italic;
@@ -563,6 +562,9 @@ footer#colophon .footer-contact-wrap {
   }
   /*  ******************************** SIDEBAR ********************************  */
   /*  ******************************** FOOTER ********************************  */
+  footer#colophon {
+    text-align: center;
+  }
   /* PLUGIN STYLES
 *****************************************************************/
   /*  ******************************** WOOCOMMERCE ********************************  */
@@ -626,6 +628,9 @@ footer#colophon .footer-contact-wrap {
 \* ---------------------------------------------- */
   /* GENERAL STYLES
 *****************************************************************/
+  #primary {
+    margin-bottom: 1.714285714rem;
+  }
   #secondary {
     width: 29%;
     margin-top: 24px;
@@ -677,7 +682,10 @@ footer#colophon .footer-contact-wrap {
   }
   /*  ******************************** SIDEBAR ********************************  */
   /*  ******************************** FOOTER ********************************  */
-  footer .inner-wrap {
+  footer#colophon {
+    text-align: left;
+  }
+  footer#colophon .inner-wrap {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -693,6 +701,12 @@ footer#colophon .footer-contact-wrap {
     -ms-flex-align: space-between;
     -webkit-align-items: space-between;
     align-items: space-between;
+  }
+  footer#colophon .estimate-btn-text {
+    text-align: right;
+  }
+  footer#colophon h2 {
+    margin-bottom: 20px;
   }
   /* PLUGIN STYLES
 *****************************************************************/

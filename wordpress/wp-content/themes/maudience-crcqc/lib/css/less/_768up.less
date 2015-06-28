@@ -30,7 +30,7 @@
     // reset primary and secondary widths
 
     #primary {
-
+        margin-bottom: 1.714285714rem;
     }
 
     #secondary {
@@ -97,9 +97,20 @@
     /*  ******************************** SIDEBAR ********************************  */
     /*  ******************************** FOOTER ********************************  */
 
-        footer .inner-wrap {//line up our custom widget areas in the footer
-            .maudience-flexbox(space-between);//line em up
+        footer#colophon {
+            text-align: left;
+
+            .inner-wrap {//line up our custom widget areas in the footer
+                .maudience-flexbox(space-between);//line em up
+            }
+
+            .estimate-btn-text {
+                text-align: right;
+            }
+
+            h2 { margin-bottom: 20px; }
         }
+
 
 /* PLUGIN STYLES
 *****************************************************************/
