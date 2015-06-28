@@ -631,6 +631,9 @@ footer#colophon .footer-contact-wrap {
     margin: 10px 20px;
     line-height: 1.45rem;
   }
+  .template-front-page .pre-footer-full {
+    display: none;
+  }
   /*  ******************************** FOOTER ********************************  */
   footer#colophon {
     text-align: center;
