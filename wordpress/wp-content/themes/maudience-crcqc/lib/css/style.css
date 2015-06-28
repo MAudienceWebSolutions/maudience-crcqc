@@ -230,7 +230,6 @@ footer#colophon .menu-social-media-navigation-container .menu .menu-item:nth-of-
 }
 /*  ******************************** CONTENT ********************************  */
 #primary {
-  margin: 20px 0;
   padding: 20px;
   border-top: 5px solid #a50000;
 }
@@ -589,6 +588,10 @@ footer#colophon .footer-contact-wrap {
 \* ---------------------------------------------- */
   /* GENERAL STYLES
 *****************************************************************/
+  #secondary {
+    width: 29%;
+    border-top: 5px solid white;
+  }
   /* SHELL STYLES
 *****************************************************************/
   /*  ******************************** HEADER ********************************  */
