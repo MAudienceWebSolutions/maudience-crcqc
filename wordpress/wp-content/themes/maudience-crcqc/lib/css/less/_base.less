@@ -119,6 +119,37 @@
             }
         }
 
+        footer#colophon .menu-social-media-navigation-container .menu {
+
+            &:before {
+                display: inline-block;
+                width: 150px;
+                height: 75px;
+                background-image: url('../images/monkey-bubble.png');
+                content: " ";
+                background-size: 140px;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                vertical-align: top;
+            }
+
+            .menu-item {
+                background-image: url('../images/social-media-icons.png');
+                background-size: 65px auto;
+                background-repeat: no-repeat;
+                background-position: 5px center;
+                height: 25px;
+                width: 25px;
+                display: inline-block;
+                margin: 10px 10px 0;
+                vertical-align: top;
+
+                a { color: transparent; }
+
+                &:nth-of-type(2) { background-position: -40px center; }
+            }
+        }
+
     /*  ******************************** CONTENT ********************************  */
 
         #primary {
