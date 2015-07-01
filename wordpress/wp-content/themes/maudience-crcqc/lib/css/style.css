@@ -476,6 +476,15 @@ footer#colophon .footer-contact-wrap {
   border: 5px solid white;
   box-shadow: 0 0 15px lightgrey;
 }
+.template-front-page .our-services-list li:first-of-type h3:before {
+  background-image: url('../images/new-service.jpg');
+}
+.template-front-page .our-services-list li:nth-of-type(2) h3:before {
+  background-image: url('../images/Safety-First.jpg');
+}
+.template-front-page .our-services-list li:nth-of-type(3) h3:before {
+  background-image: url('../images/locals.jpg');
+}
 .template-front-page .top-section .column-centerfull {
   background-image: url('../images/collision-repair-center-quad-cities-banner-image-home.png');
   background-size: cover;
