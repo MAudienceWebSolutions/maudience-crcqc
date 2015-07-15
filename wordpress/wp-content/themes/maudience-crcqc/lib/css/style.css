@@ -340,6 +340,7 @@ footer#colophon .footer-contact-wrap {
 }
 #gform_wrapper_1 .gform_fields #field_1_5 {
   background-color: white;
+  color: black;
 }
 #gform_wrapper_1 .gform_fields .gfield_contains_required .ginput_container {
   border-right: 5px solid #a50000;
