@@ -335,6 +335,12 @@ footer#colophon .footer-contact-wrap {
   padding-left: 5%;
   font-style: italic;
 }
+#gform_wrapper_1 .gform_fields .ginput_container input[type="file"] {
+  padding-left: 0;
+}
+#gform_wrapper_1 .gform_fields #field_1_5 {
+  background-color: white;
+}
 #gform_wrapper_1 .gform_fields .gfield_contains_required .ginput_container {
   border-right: 5px solid #a50000;
 }
