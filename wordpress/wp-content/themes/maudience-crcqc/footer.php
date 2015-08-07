@@ -16,7 +16,7 @@
 			<div class="column-left section-column">
 				<div class="inner-column-wrap">
 					<h3>Locals Love Us</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid, si reviviscant Platonis illi et deinceps qui eorum auditores fuerunt, et tecum ita loquantur? Proclivi currit oratio.</p>
+					<p>Collision Repair Center has been serving the East Moline area since 1979. We like to keep our employees and customers around. Stop in for a repair, quote or just to say hi!</p>
 				</div>
 			</div>
 			<div class="column-right section-column">
